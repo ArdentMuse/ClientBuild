@@ -33,7 +33,7 @@ gulp.task("watchFiles", function () {
 
 gulp.task("scripts", function() {
     return gulp.src("./wwwroot/src/**/*.ts")
-        .pipe(typescript)
+        .pipe(typescript(tsProject))
         .pipe(gulp.dest("./wwwroot/app"))
         .pipe(browserSync.reload({ stream: true }));
 

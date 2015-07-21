@@ -1,5 +1,4 @@
-﻿import { Person } from "app/main";
-
+﻿import {Person} from "Person";
 var person = new Person("Stacy");
 
 person.sayHello();

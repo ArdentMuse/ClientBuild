@@ -6,6 +6,8 @@ var vinylPaths = require('vinyl-paths');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 
+var tsProject = typescript.createProject("tsconfig.json");
+
 gulp.task("hello", function() {
     console.log("HELLO!");
 });
@@ -31,7 +33,7 @@ gulp.task("watchFiles", function () {
 
 gulp.task("scripts", function() {
     return gulp.src("./wwwroot/src/**/*.ts")
-        .pipe(typescript())
+        .pipe(typescript)
         .pipe(gulp.dest("./wwwroot/app"))
         .pipe(browserSync.reload({ stream: true }));
 

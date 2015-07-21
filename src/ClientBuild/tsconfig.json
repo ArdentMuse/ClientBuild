@@ -1,0 +1,8 @@
+﻿{
+    "compilerOptions": {
+        "target": "es3",
+        "module": "system",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    }
+}

@@ -16,5 +16,19 @@
     <DevelopmentServerPort>54392</DevelopmentServerPort>
     <GruntGulpQueried>True</GruntGulpQueried>
   </PropertyGroup>
+  <!--<PropertyGroup>
+	<TypeScriptTarget>ES3</TypeScriptTarget>
+	<TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+	<TypeScriptNoImplicitAny>false</TypeScriptNoImplicitAny>
+	<TypeScriptModuleKind>System</TypeScriptModuleKind>
+	<TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+	<TypeScriptOutFile></TypeScriptOutFile>
+	<TypeScriptOutDir></TypeScriptOutDir>
+	<TypeScriptGeneratesDeclarations>false</TypeScriptGeneratesDeclarations>
+	<TypeScriptSourceMap>true</TypeScriptSourceMap>
+	<TypeScriptMapRoot></TypeScriptMapRoot>
+	<TypeScriptSourceRoot></TypeScriptSourceRoot>
+	<TypeScriptNoEmitOnError>true</TypeScriptNoEmitOnError>
+  </PropertyGroup>-->
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>

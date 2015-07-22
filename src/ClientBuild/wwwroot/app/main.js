@@ -7,7 +7,8 @@ System.register(["Person"], function(exports_1) {
                 Person_1 = _Person_1;
             }],
         execute: function() {
-            person = new Person_1.Person("Stacy");
+            //var person = new Person("Stacy Gay");
+            person = Person_1.Person.factory();
             person.sayHello();
         }
     }

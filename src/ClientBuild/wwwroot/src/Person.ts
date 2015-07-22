@@ -1,4 +1,7 @@
-﻿export class Person {
+﻿import {Factory} from "decorators/Factory";
+
+@Factory
+export class Person {
     private name: string;
     constructor(name) {
         this.name = name;

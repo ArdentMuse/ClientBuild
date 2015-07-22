@@ -1,4 +1,4 @@
 ﻿import {Person} from "Person";
-var person = new Person("Stacy");
-
+//var person = new Person("Stacy Gay");
+var person = Person.factory();
 person.sayHello();

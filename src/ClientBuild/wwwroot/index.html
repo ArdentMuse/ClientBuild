@@ -4,8 +4,11 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-<body>
+<body ng-app="app">
 Hello World
+    <div ng-controller="PersonController as vm">
+        {{vm.person.getHello()}}
+    </div>
     <script src="/vendor/jspm_packages/system.js"></script>
     <script src="/vendor/config.js"></script>
     <script>System.import("main");</script>

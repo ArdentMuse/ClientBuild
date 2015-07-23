@@ -3,11 +3,15 @@
 @Factory
 export class Person {
     private name: string;
-    constructor(name) {
+    constructor(name: string) {
         this.name = name;
     }
 
     public sayHello() {
-        console.log("Hello " + this.name);
+        console.log(this.getHello());
+    }
+
+    public getHello(): string {
+        return "Hello " + this.name;
     }
 }

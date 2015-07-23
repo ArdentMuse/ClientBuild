@@ -22,11 +22,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
                     this.name = name;
                 }
                 Person.prototype.sayHello = function () {
-                    console.log("Hello " + this.name);
+                    console.log(this.getHello());
+                };
+                Person.prototype.getHello = function () {
+                    return "Hello " + this.name;
                 };
                 Person = __decorate([
                     Factory_1.Factory, 
-                    __metadata('design:paramtypes', [Object])
+                    __metadata('design:paramtypes', [String])
                 ], Person);
                 return Person;
             })();

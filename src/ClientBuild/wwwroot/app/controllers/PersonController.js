@@ -9,8 +9,11 @@ System.register(["../Person"], function(exports_1) {
         execute: function() {
             PersonController = (function () {
                 function PersonController() {
-                    this.person = new Person_1.Person("stacy");
+                    this.person = new Person_1.Person("stacy gay");
                 }
+                PersonController.prototype.getHello = function () {
+                    return this.person.getHello();
+                };
                 return PersonController;
             })();
             exports_1("PersonController", PersonController);

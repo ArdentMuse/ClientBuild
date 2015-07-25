@@ -1,10 +1,10 @@
 ﻿import {Person} from "Person";
 import {PersonController} from "controllers/PersonController";
-import angular from "angular";
+import "angular";
 
-var person = new Person("Stacy Gay");
+var person = new PersonController();
 //var person = Person.factory();
-person.sayHello();
+console.log(person.getHello());
 
 var app = angular.module("app", []);
 

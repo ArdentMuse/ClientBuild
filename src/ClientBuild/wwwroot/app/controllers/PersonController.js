@@ -16,7 +16,7 @@ System.register(["../Person"], function(exports_1) {
                 };
                 return PersonController;
             })();
-            exports_1("PersonController", PersonController);
+            exports_1("default", PersonController);
         }
     }
 });

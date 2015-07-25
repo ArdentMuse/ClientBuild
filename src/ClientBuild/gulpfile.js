@@ -6,6 +6,10 @@ var vinylPaths = require('vinyl-paths');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 
+var sourcemaps = require("gulp-sourcemaps");
+
+var sass = require("gulp-sass");
+
 var browserSync = require("browser-sync");
 var reload = browserSync.reload;
 
@@ -30,6 +34,18 @@ gulp.task("browserSync", function () {
 gulp.task("watchFiles", function () {
     gulp.watch("wwwroot/src/index.html", ["copyIndex"]);
     gulp.watch("wwwroot/src/**/*.ts", ["scripts"]);
+    gulp.watch("wwwroot/src/scss/**/*.{scss,sass}", ["sass"]);
+});
+
+gulp.task("sass", function() {
+    return gulp.src("wwwroot/src/scss/**/*.{scss,sass}")
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            errLogToConsole: true
+        }))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest("wwwroot/css"));
+
 });
 
 gulp.task("scripts", function () {
@@ -45,4 +61,4 @@ gulp.task("clean", function () {
 });
 
 //gulp.task("default", ["clean", "copyIndex", "scripts", "browserSync", "watchFiles"]);
-gulp.task("default", ["clean", "copyIndex", "scripts", "watchFiles"]);
+gulp.task("default", ["clean", "copyIndex", "scripts", "sass", "watchFiles"]);

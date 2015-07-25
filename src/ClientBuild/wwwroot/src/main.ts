@@ -1,5 +1,6 @@
 ﻿import {Person} from "Person";
-import {PersonController} from "controllers/PersonController";
+
+import PersonController from "controllers/PersonController";
 import "angular";
 
 var person = new PersonController();

@@ -1,6 +1,6 @@
 ﻿import {Person} from "../Person";
 
-export class PersonController {
+export default class PersonController {
     private person: Person;
 
     constructor() {

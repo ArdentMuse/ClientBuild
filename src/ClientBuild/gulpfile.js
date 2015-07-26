@@ -5,9 +5,8 @@ var del = require('del');
 var vinylPaths = require('vinyl-paths');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-
+var cachebust = require("gulp-cache-bust");
 var sourcemaps = require("gulp-sourcemaps");
-
 var sass = require("gulp-sass");
 
 var browserSync = require("browser-sync");
@@ -19,10 +18,12 @@ gulp.task("hello", function() {
     console.log("HELLO!");
 });
 
-gulp.task("copyIndex", function() {
-    return gulp.src("./wwwroot/src/index.html")
-        .pipe(gulp.dest("./wwwroot"))
-        .pipe(reload({stream:true}));
+gulp.task("copyIndex", function () {
+    return gulp.src("wwwroot/src/**/*.html")
+        .pipe(cachebust({
+            type: "timestamp"
+        }))
+        .pipe(gulp.dest("wwwroot"));
 });
 
 gulp.task("browserSync", function () {

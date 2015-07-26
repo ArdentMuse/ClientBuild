@@ -8,6 +8,7 @@ System.register(["controllers/PersonController", "angular"], function(exports_1)
             },
             function (_) {}],
         execute: function() {
+            //import "bootstrap";
             person = new PersonController_1.default();
             //var person = Person.factory();
             console.log(person.getHello());

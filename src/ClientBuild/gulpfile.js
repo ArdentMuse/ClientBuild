@@ -43,7 +43,7 @@ gulp.task("sass", function() {
         .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true
-        }))
+        }).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest("wwwroot/css"));
 

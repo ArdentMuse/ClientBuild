@@ -2,6 +2,7 @@
 
 import PersonController from "controllers/PersonController";
 import "angular";
+//import "bootstrap";
 
 var person = new PersonController();
 //var person = Person.factory();

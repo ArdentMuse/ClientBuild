@@ -18,6 +18,7 @@ System.config({
     "angular": "github:angular/bower-angular@1.4.3",
     "babel": "npm:babel-core@5.8.3",
     "babel-runtime": "npm:babel-runtime@5.8.3",
+    "bootstrap": "github:twbs/bootstrap-sass@3.3.5",
     "core-js": "npm:core-js@0.9.18",
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"

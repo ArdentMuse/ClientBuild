@@ -3,5 +3,5 @@
 @Component({
     selector: "word-generator"
 })
-export class ViewModel {
+export default class WordGenerator {
 }

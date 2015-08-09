@@ -1,0 +1,1 @@
+module.exports = require("npm:metawriter@1.0.2/metawriter");

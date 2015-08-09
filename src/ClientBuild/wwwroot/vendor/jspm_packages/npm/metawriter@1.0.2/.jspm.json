@@ -1,0 +1,58 @@
+{
+  "name": "metawriter",
+  "version": "1.0.2",
+  "description": "A simple utility for reading and writing namespaced metadata using the Reflection metadata API",
+  "main": "metawriter.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "es7",
+    "decorators",
+    "metadata",
+    "reflection"
+  ],
+  "author": {
+    "name": "Mike Ryan"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "chai": "^2.3.0 < 3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-mocha": "^2.1.1",
+    "rimraf": "^2.3.4",
+    "sinon": "^1.14.1",
+    "sinon-chai": "*"
+  },
+  "gitHead": "9786d2ceaba56ad46c6aabf8ef20364ee4435673",
+  "_id": "metawriter@1.0.2",
+  "_shasum": "0fdd1b6d9f267898ad5444eca14d223c00b6f8ab",
+  "_from": ".",
+  "_npmVersion": "2.10.1",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "name": "mikeryan52",
+    "email": "mike.ryan52@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "mikeryan52",
+      "email": "mike.ryan52@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "0fdd1b6d9f267898ad5444eca14d223c00b6f8ab",
+    "tarball": "http://registry.npmjs.org/metawriter/-/metawriter-1.0.2.tgz"
+  },
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "registry": "npm",
+  "dependencies": {
+    "reflect-metadata": "reflect-metadata@^0.1.0",
+    "path": "github:jspm/nodelibs-path@^0.1.0"
+  }
+}

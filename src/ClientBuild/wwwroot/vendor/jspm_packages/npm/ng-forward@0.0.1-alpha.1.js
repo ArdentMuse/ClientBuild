@@ -1,0 +1,1 @@
+module.exports = require("npm:ng-forward@0.0.1-alpha.1/src/index");
